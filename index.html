@@ -102,12 +102,61 @@
     .swiper-slide:nth-child(10n) {
       background-color: rgb(54, 94, 77);
     }
+
+    html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;
+        overflow: hidden;
+        flex-direction: column;
+        position: relative;
+    }
+
+
+
+
+    .title {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+
+    }
+    .title h2 {
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+    }
+    .title-top, .title-bottom {
+        background: linear-gradient(to right, #e224cc 0%, #55e6e3 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+    .title-top {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .title-bottom {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
   </style>
 </head>
 
 <body>
   <!-- Swiper -->
 
+    <div class="title title-top noselect"><h2>Виртуальные инструменты продаж</h2></div>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">Продукт 1<br>Виджет на сайт</div>
@@ -115,6 +164,7 @@
       <div class="swiper-slide">Продукт 3<br>Фото/видео студия</div>
     </div>
   </div>
+  <div class="title title-bottom noselect"><h2>Выбери свой</h2></div>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
